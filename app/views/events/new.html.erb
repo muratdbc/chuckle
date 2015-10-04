@@ -1,0 +1,21 @@
+<div class="row">
+  <div class="col-xs-4">Cancel</div>
+  <div class="col-xs-4">New Event</div>
+  <div class="col-xs-4">Add</div>
+  <div class="col-xs-12">
+  <%= bootstrap_form_tag url: '/subscribe' do |f| %>
+  <%= f.text_field :title, hide_label: true, placeholder: "Enter title" %>
+  <%= f.text_field :address, hide_label: true, placeholder: "Enter address" %>
+  <label for="flip-5" class="ui-hidden-accessible">Flip toggle switch:</label>
+  <div class="col-xs-6" style="padding-top: 10px;">All day</div>
+  <div class="col-xs-6"> <select name="flip-5" id="flip-5" data-role="flipswitch">
+        <option value="off">Off</option>
+        <option value="on">On</option>
+  </select></div>
+  <div class="col-xs-2">Starts</div>
+
+
+
+  <% end %>
+  </div>
+</div>
